@@ -104,11 +104,11 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT'),
+        'NAME': 'defaultdb',
+        'USER': 'avnadmin',
+        'PASSWORD': 'YOUR_AIVEN_PASSWORD',
+        'HOST': 'mysql-3611e7b0-hariofficial965-3173.a.aivencloud.com',
+        'PORT': '27892',
     }
 }
 
