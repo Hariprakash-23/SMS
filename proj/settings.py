@@ -22,7 +22,7 @@ load_dotenv()
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&h=tu(l^^=g_-b#yg-f0_i5^m$_6^1^-gv$5a)6yf^z&@5w841'
+SECRET_KEY = SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -30,7 +30,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://sms-app-production-46dd.up.railway.app",
+    "https://sms-app-latest-2dtw.onrender.com",
 ]
 
 CSRF_COOKIE_SECURE = True
